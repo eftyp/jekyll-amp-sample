@@ -33,6 +33,18 @@
 </style>
 
 
-<div id='stickyb' class='stickywrap'>
-  <div class='stickyzone'> <a href='#' title='Banner iklan disini'><amp-img width="400" height="50" layout="responsive" src="https://mridhoan.github.io/images/indigo.png"></amp-img></a> </div>
-</div>
+<amp-sticky-ad layout='nodisplay'>
+
+<b:if cond='data:blog.isMobileRequest == &quot;false&quot;'>
+<!-- Kode iklan untuk desktop silahkan simpan di bawah ini -->
+<amp-ad data-ad-client='ca-pub-1012461088833333' data-ad-slot='7397810000' height='90' type='adsense' width='728'>
+</amp-ad>
+</b:if>
+
+<b:if cond='data:blog.isMobileRequest == &quot;true&quot;'>
+<!-- Kode iklan untuk mobile silahkan simpan di bawah ini -->
+<amp-ad data-ad-client='ca-pub-1012461088833333' data-ad-slot='7397810000' height='50' type='adsense' width='320'>
+</amp-ad>
+</b:if>
+
+  </amp-sticky-ad>
