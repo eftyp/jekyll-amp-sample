@@ -160,6 +160,11 @@ img {
   }
 }
 
+.amp-sticky-ad{max-width:736px;margin-left:-368px;left:50%}
+.amp-sticky-ad-close-button{background-position:center;border-radius:12px 12px 0 0;}
+@media screen and (max-width:800px){amp-sticky-ad{margin-left:0;left:0}.amp-sticky-ad-close-button{background-position:9px;border-radius:12px 0 0 0;}}
+
+
 .site-avatar {
   float: left;
   width: 70px;
