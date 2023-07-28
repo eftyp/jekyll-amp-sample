@@ -139,6 +139,19 @@ img {
     clear: both;
 }
 
+<!-- Begin "AMP Sticky Footer" || Help center -->
+<!-- Insert in Settings->HTML/CSS->Head -->
+<!-- CS:20200120-06-2 -->
+<style amp-custom>
+ section:last-child {
+   position: fixed;
+   bottom: 0;
+   width: 100%; 
+   z-index: 1000000;
+ }
+ </style>
+<!-- End "AMP Sticky Footer" || Help center -->
+
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
