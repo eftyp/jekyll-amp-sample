@@ -141,14 +141,44 @@ img {
 
 
 
- section:last-child {
+ .section:last-child {
    position: fixed;
    bottom: 0;
    width: 100%; 
    z-index: 1000000;
  }
  
+.stickywrap {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    float: none;
+    overflow: hidden;
+    display: scroll;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999
+  }
 
+  .stickyzone {
+    text-align: center;
+    display: block;
+    max-width: 970px;
+    height: auto;
+    overflow: hidden;
+    margin: auto
+  }
+
+  .stickyzone img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle
+  }
+
+  .stickyclose {
+    cursor: pointer;
+    text-align: center
+  }
 
 /*********************/
 /* LAYOUT / SECTIONS */
