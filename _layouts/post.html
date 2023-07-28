@@ -52,7 +52,12 @@
           {{ page.title }} - post
           <p>Selesai</p>
         </div>
-      
+      <ul>
+        {% assign posts = site.posts | where_exp:"post", "post.url != page.url" | sample:10 %}
+        {% for post in posts %}
+          {% include related-post.html %}
+        {% endfor %}
+      </ul>
         <div class="date">
           Written on {{ page.date | date: "%B %e, %Y" }}
         </div>
