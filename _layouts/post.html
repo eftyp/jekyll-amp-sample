@@ -58,6 +58,30 @@
           {% include related-post.html %}
         {% endfor %}
       </ul>
+        .fixed-whatsapp {
+  position: fixed;
+  bottom: 85px;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  
+}
+
+.fixed-whatsapp:before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 350px 75px;
+  background-position: center center;
+  width: 100%;
+  height: 100px;
+  background-image: url("https://1.bp.blogspot.com/-bXuEmXlfAhs/XZBg6i9s2MI/AAAAAAAAA-8/SMQO8IVyddUWyPJFYRPdw2kG-DSkhp6rQCLcBGAsYHQ/adsgif1.gif");
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0%;
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, .12), 0 1px 1px 0 rgba(0, 0, 0, .24);
+}
         <div class="date">
           Written on {{ page.date | date: "%B %e, %Y" }}
         </div>
